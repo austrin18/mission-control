@@ -1,154 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Austin Dabre — Technology Consultant</title>
+  <title>Austin Dabre — Technology Consultant & Builder</title>
+  <meta name="description" content="8 years solving hard problems in healthcare. Now building agentic AI systems to solve more of them.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-name">Austin Dabre</div>
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Austin Dabre</div>
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <a href="#work">Work</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
-  </nav>
+    <button class="nav-mobile-btn" id="mobile-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile-menu" id="mobile-menu">
+    <a href="#work">Work</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-label">Technology Consultant · New Jersey</div>
-    <h1 class="hero-heading">
-      Technology,<br>
-      strategy, and<br>
-      the <em>space between.</em>
-    </h1>
-    <div class="hero-sub">
-      <p>8 years solving hard problems in healthcare.<br>Now building products to solve more of them.</p>
-      <a href="projects.html" class="btn">See what I'm building &rarr;</a>
+<!-- ── HERO ───────────────────────────────────────────── -->
+<section class="hero" id="hero">
+  <canvas class="hero-canvas" id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span class="hero-dot"></span>Technology Consultant &amp; Builder · New Jersey</div>
+    <h1 class="hero-heading">Austin Dabre</h1>
+    <p class="hero-sub">8 Years Building Enterprise Systems.<br>Now Building What's Next.</p>
+    <div class="hero-ctas">
+      <a href="#work" class="btn btn-primary">Explore My Work</a>
+      <a href="#projects" class="btn btn-ghost">What I'm Building Now</a>
     </div>
-  </section>
-
-  <!-- DIVIDER LINE -->
-  <div class="section-divider"></div>
-
-  <!-- ABOUT -->
-  <section class="about reveal">
-    <div class="section-label">About</div>
-    <div class="about-body">
-      <p>
-        I started as an engineer, trained as an information manager, and spent 8 years at ZS Associates becoming
-        someone who can do both the technical and the strategic work — and lead the people in between.
-      </p>
-      <p>
-        I've worked across pharma and health plans, on everything from cloud transformation programmes to
-        go-to-market strategy, often in the same week. Writing SQL queries and board-level strategy decks.
-        Managing multi-million dollar engagements and cold-calling new clients with no warm introduction.
-      </p>
-      <p class="about-close">
-        That range is intentional. It's what I'm building on.
-      </p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="stat-num">23</span><span class="stat-label">Projects</span></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><span class="stat-num">8</span><span class="stat-label">Years</span></div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat"><span class="stat-num">4</span><span class="stat-label">Agentic AI Systems Built</span></div>
     </div>
-  </section>
+  </div>
+  <div class="hero-domain-legend">
+    <div class="legend-item"><span class="legend-dot" style="background:var(--blue)"></span><span>Data Warehouse</span></div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--amber)"></span><span>Reporting &amp; Analytics</span></div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--green)"></span><span>DevOps / Delivery</span></div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--purple)"></span><span>Agentic AI</span></div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-arrow"><div class="scroll-line"></div></div></div>
+</section>
 
-  <div class="section-divider"></div>
-
-  <!-- WHAT I DO -->
-  <section class="what-i-do reveal">
-    <div class="section-label">What I do</div>
-    <div class="skills-grid">
-
-      <div class="skill-card">
-        <div class="skill-num">01</div>
-        <h3>Strategy &amp; business</h3>
-        <p>Go-to-market strategy, organisational growth, change management, business development — from writing the proposal to delivering the outcome.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-num">02</div>
-        <h3>Data &amp; technology</h3>
-        <p>SQL, Python, AWS cloud transformation, MicroStrategy, Tableau. End-to-end data and AI project delivery across enterprise healthcare clients.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-num">03</div>
-        <h3>Healthcare domain</h3>
-        <p>8 years deep in pharma and health plans. Commercial analytics, enterprise data platforms, cloud infrastructure, and AI in healthcare.</p>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-num">04</div>
-        <h3>Building</h3>
-        <p>Currently learning React, Next.js, and full-stack web development. Using this site as the foundation for a product hub launching soon.</p>
-      </div>
-
+<!-- ── SECTION 2: THE ARC ─────────────────────────────── -->
+<section class="arc-section" id="work">
+  <div class="section-inner">
+    <div class="arc-header reveal">
+      <div class="section-eyebrow">Career Timeline</div>
+      <h2 class="section-heading">The Arc</h2>
+      <p class="section-desc">23 projects across 8 years. Click any node to explore the story.</p>
     </div>
-  </section>
+    <div class="arc-track-wrap reveal">
+      <div class="arc-curve-line" id="arc-curve"></div>
+      <div class="arc-nodes" id="arc-nodes"></div>
+    </div>
+    <div class="arc-card-wrap" id="arc-card-wrap">
+      <div class="arc-card" id="arc-card"></div>
+    </div>
+  </div>
+</section>
 
-  <div class="section-divider"></div>
+<!-- ── SECTION 3: EXPERTISE MAP ──────────────────────── -->
+<section class="expertise-section" id="expertise">
+  <div class="section-inner">
+    <div class="expertise-header reveal">
+      <div class="section-eyebrow">Skills &amp; Domain</div>
+      <h2 class="section-heading">Expertise Map</h2>
+      <p class="section-desc">A career built on deep foundations, now pivoting into what's next.</p>
+    </div>
+    <div class="expertise-panels reveal">
 
-  <!-- EXPERIENCE -->
-  <section class="experience reveal">
-    <div class="section-label">Experience</div>
-    <div class="jobs">
-
-      <div class="job">
-        <div class="job-meta">
-          <span class="job-date">2020 – Present</span>
-        </div>
-        <div class="job-content">
-          <div class="job-title">Consultant, Health Plans</div>
-          <div class="job-company">ZS Associates</div>
-          <p class="job-desc">
-            ZS's health plans practice is a venture within the firm — lean team, new market, high ownership.
-            I lead end-to-end client engagements spanning strategy, data, and AI. I drive business development
-            independently and operate as the connective tissue between client needs, technical solutions, and
-            business outcomes.
-          </p>
+      <div class="exp-panel exp-panel--foundation">
+        <div class="exp-panel-label">Foundation Layer</div>
+        <div class="exp-orbit">
+          <div class="orbit-center">Data &amp;<br>Systems</div>
+          <div class="orbit-ring orbit-ring--1">
+            <div class="orbit-tag" style="--angle:0deg">SQL</div>
+            <div class="orbit-tag" style="--angle:60deg">Python</div>
+            <div class="orbit-tag" style="--angle:120deg">AWS</div>
+            <div class="orbit-tag" style="--angle:180deg">Redshift</div>
+            <div class="orbit-tag" style="--angle:240deg">Tableau</div>
+            <div class="orbit-tag" style="--angle:300deg">MicroStrategy</div>
+          </div>
+          <div class="orbit-ring orbit-ring--2">
+            <div class="orbit-tag" style="--angle:30deg">Data Warehouse</div>
+            <div class="orbit-tag" style="--angle:110deg">ETL Pipelines</div>
+            <div class="orbit-tag" style="--angle:190deg">DevOps</div>
+            <div class="orbit-tag" style="--angle:270deg">Cloud Migration</div>
+          </div>
         </div>
       </div>
 
-      <div class="job">
-        <div class="job-meta">
-          <span class="job-date">2016 – 2020</span>
-        </div>
-        <div class="job-content">
-          <div class="job-title">Associate Consultant &rarr; Associate, Pharma</div>
-          <div class="job-company">ZS Associates</div>
-          <p class="job-desc">
-            Started as a technical executor on large-scale cloud transformation programmes — migrating
-            on-premise infrastructure to AWS for enterprise pharma clients. Grew into a delivery lead
-            owning client relationships, timelines, and production-ready outcomes across multi-month engagements.
-          </p>
+      <div class="exp-bridge">
+        <div class="bridge-line"></div>
+        <div class="bridge-label">In Transition</div>
+        <div class="bridge-arrow">→</div>
+      </div>
+
+      <div class="exp-panel exp-panel--emerging">
+        <div class="exp-panel-label">Emerging Layer</div>
+        <div class="exp-orbit exp-orbit--purple">
+          <div class="orbit-center orbit-center--purple">Agentic<br>AI</div>
+          <div class="orbit-ring orbit-ring--1 orbit-ring--purple">
+            <div class="orbit-tag orbit-tag--purple" style="--angle:0deg">RAG</div>
+            <div class="orbit-tag orbit-tag--purple" style="--angle:72deg">LangGraph</div>
+            <div class="orbit-tag orbit-tag--purple" style="--angle:144deg">CrewAI</div>
+            <div class="orbit-tag orbit-tag--purple" style="--angle:216deg">MCP</div>
+            <div class="orbit-tag orbit-tag--purple" style="--angle:288deg">Max.AI</div>
+          </div>
+          <div class="orbit-ring orbit-ring--2 orbit-ring--purple">
+            <div class="orbit-tag orbit-tag--purple" style="--angle:36deg">Agent Design</div>
+            <div class="orbit-tag orbit-tag--purple" style="--angle:156deg">Human-in-Loop</div>
+            <div class="orbit-tag orbit-tag--purple" style="--angle:276deg">Healthcare AI</div>
+          </div>
         </div>
       </div>
 
     </div>
-  </section>
 
-  <div class="section-divider"></div>
+    <div class="expertise-skills reveal">
+      <div class="skill-group">
+        <div class="skill-group-label" style="color:var(--blue)">Strategy &amp; Business</div>
+        <div class="skill-tags">
+          <span class="stag">Go-to-Market Strategy</span>
+          <span class="stag">Org Growth Strategy</span>
+          <span class="stag">Change Management</span>
+          <span class="stag">Business Development</span>
+          <span class="stag">Pre-Sales &amp; Proposals</span>
+          <span class="stag">Executive Stakeholder Mgmt</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label" style="color:var(--amber)">Data &amp; Technology</div>
+        <div class="skill-tags">
+          <span class="stag">SQL</span>
+          <span class="stag">Python</span>
+          <span class="stag">AWS Cloud Transformation</span>
+          <span class="stag">MicroStrategy</span>
+          <span class="stag">Tableau</span>
+          <span class="stag">Data Architecture</span>
+          <span class="stag">UAT Governance</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label" style="color:var(--purple)">Agentic AI</div>
+        <div class="skill-tags">
+          <span class="stag">RAG Pipeline Design</span>
+          <span class="stag">Multi-Agent Workflows</span>
+          <span class="stag">Human-in-the-Loop Arch.</span>
+          <span class="stag">LLM Agent Deployment</span>
+          <span class="stag">Next.js / React</span>
+          <span class="stag">Full-Stack (Learning)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+<!-- ── SECTION 4: PROJECT DEEP DIVES ─────────────────── -->
+<section class="projects-section" id="projects">
+  <div class="section-inner">
+    <div class="projects-header reveal">
+      <div class="section-eyebrow">Selected Work</div>
+      <h2 class="section-heading">Project Deep Dives</h2>
+      <p class="section-desc">Filtered highlights across 8 years of healthcare technology delivery.</p>
+    </div>
+    <div class="filter-tabs reveal" id="filter-tabs">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="dw" style="--fc:var(--blue)">Data Warehouse</button>
+      <button class="filter-btn" data-filter="reporting" style="--fc:var(--amber)">Reporting</button>
+      <button class="filter-btn" data-filter="devops" style="--fc:var(--green)">DevOps / Delivery</button>
+      <button class="filter-btn" data-filter="ai" style="--fc:var(--purple)">Agentic AI</button>
+    </div>
+    <div class="project-grid" id="project-grid"></div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
     <div class="footer-left">
-      <span>Austin Dabre</span>
-      <span class="footer-dot">&middot;</span>
-      <span>New Jersey, USA</span>
+      <div class="footer-name">Austin Dabre</div>
+      <p class="footer-bio">Technology consultant at the intersection of healthcare, data, and AI. Open to consulting engagements, advisory roles, and AI collaboration.</p>
+      <div class="footer-links">
+        <a href="mailto:austin.dabre@email.com" class="footer-link">austin.dabre@email.com</a>
+        <a href="https://linkedin.com/in/austindabre" target="_blank" class="footer-link">LinkedIn →</a>
+      </div>
     </div>
     <div class="footer-right">
-      <a href="mailto:austin.dabre@email.com">Email</a>
-      <a href="https://linkedin.com/in/austindabre" target="_blank">LinkedIn</a>
+      <div class="footer-tag">Built with intention.</div>
+      <div class="footer-copy">© 2026 Austin Dabre</div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
